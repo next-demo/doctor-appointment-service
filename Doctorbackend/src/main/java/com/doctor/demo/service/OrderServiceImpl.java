@@ -1,61 +1,61 @@
-package com.doctor.demo.service;
+// package com.doctor.demo.service;
 
-import java.util.List;
+// import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.GetMapping;
+// import org.springframework.beans.factory.annotation.Autowired;
+// import org.springframework.stereotype.Service;
+// import org.springframework.web.bind.annotation.GetMapping;
 
-import com.doctor.demo.repository.OrderRepository;
-import com.doctor.demo.repository.Orders;
+// import com.doctor.demo.repository.OrderRepository;
+// import com.doctor.demo.repository.Orders;
 
 
-@Service
-public class OrderServiceImpl implements OrdersService {
+// @Service
+// public class OrderServiceImpl implements OrdersService {
 
-	@Autowired
-	OrderRepository ordersrepo;
+// 	@Autowired
+// 	OrderRepository ordersrepo;
 	
-	// getorders
+// 	// getorders
 	
-	public List<Orders> getAllOrders(){
-		List<Orders> order = ordersrepo.findAll();
-		return order;
-	}
+// 	public List<Orders> getAllOrders(){
+// 		List<Orders> order = ordersrepo.findAll();
+// 		return order;
+// 	}
 	
-	//post 
+// 	//post 
 	
-	public Orders postOrders(Orders order) {
-		return ordersrepo.save(order);
-	}
+// 	public Orders postOrders(Orders order) {
+// 		return ordersrepo.save(order);
+// 	}
 	
-	// update
+// 	// update
 	
-//	public Orders updatOrders(Orders order , Integer orderid) {
-//		return 
-//	}
+// //	public Orders updatOrders(Orders order , Integer orderid) {
+// //		return 
+// //	}
 	
-	public void deleteOrders(Integer orderid) {
-		ordersrepo.deleteById(orderid);
-	}
+// 	public void deleteOrders(Integer orderid) {
+// 		ordersrepo.deleteById(orderid);
+// 	}
 	
-	//
-	public List<Orders> findByUsername(String username){
-		List<Orders> orderbyid = ordersrepo.findByUsername(username);
-		return orderbyid;
-	}
+// 	//
+// 	public List<Orders> findByUsername(String username){
+// 		List<Orders> orderbyid = ordersrepo.findByUsername(username);
+// 		return orderbyid;
+// 	}
 	
-	// revenue
+// 	// revenue
 	
-	public Long calculateRevenue() {
-		return ordersrepo.calculateRevenue();
-	}
+// 	public Long calculateRevenue() {
+// 		return ordersrepo.calculateRevenue();
+// 	}
 	
-	public List<Orders> findOrdersByUsername(String username){
-		return ordersrepo.findOrdersByUsername(username);
-	}
-	
-	
+// 	public List<Orders> findOrdersByUsername(String username){
+// 		return ordersrepo.findOrdersByUsername(username);
+// 	}
 	
 	
-}
+	
+	
+// }
