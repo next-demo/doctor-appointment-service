@@ -1,5 +1,4 @@
-# doctor-appointment-service
-Doctor Appointment Booking: A place where patients can search and book appointment from preferred doctor/hospital. 
+# doctor-appointment-Backend Code
 
 This is backend code.
 All details like; How to run this project in your Editor etc. I will update after some time.
