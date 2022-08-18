@@ -1,99 +1,99 @@
-package com.doctor.demo.repository;
+// package com.doctor.demo.repository;
 
-import java.sql.Date;
+// import java.sql.Date;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
+// import javax.persistence.Entity;
+// import javax.persistence.Id;
+// import javax.persistence.JoinColumn;
+// import javax.persistence.ManyToOne;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
+// import com.fasterxml.jackson.annotation.JsonProperty;
 
-@Entity
-public class Orders {
-	@Id
-	@JsonProperty("orderid")
-	private Integer orderid;
+// @Entity
+// public class Orders {
+// 	@Id
+// 	@JsonProperty("orderid")
+// 	private Integer orderid;
 
-	@JsonProperty("customer_name")
-	private String customer_name;
+// 	@JsonProperty("customer_name")
+// 	private String customer_name;
 	
-	@JsonProperty("final_price")
-	private Long final_price;
+// 	@JsonProperty("final_price")
+// 	private Long final_price;
 	
-	@JsonProperty("book_date")
-	private java.sql.Date book_date;
+// 	@JsonProperty("book_date")
+// 	private java.sql.Date book_date;
 	
 	
-	//	
-	@JsonProperty("images")
-	private String images;
-	@JsonProperty("order_status")
-	private String order_status;
-	@ManyToOne
-    @JoinColumn(name = "username")
-    private User_Details userdetails;
+// 	//	
+// 	@JsonProperty("images")
+// 	private String images;
+// 	@JsonProperty("order_status")
+// 	private String order_status;
+// 	@ManyToOne
+//     @JoinColumn(name = "username")
+//     private User_Details userdetails;
 
-    @ManyToOne
-    @JoinColumn(name = "doctorname")
-	private Doctor_Details doctordetails1;	
+//     @ManyToOne
+//     @JoinColumn(name = "doctorname")
+// 	private Doctor_Details doctordetails1;	
     
-    @ManyToOne
-    @JoinColumn(name = "hospitalname")
-	private Hospital_details hospitaldetails;
+//     @ManyToOne
+//     @JoinColumn(name = "hospitalname")
+// 	private Hospital_details hospitaldetails;
 		 
-	public Orders(Integer orderid, String customer_name, Long final_price, Date book_date, String images,
-			String order_status, User_Details userdetails, Doctor_Details doctordetails1,
-			Hospital_details hospitaldetails, Doctor_Details hospitaldetails2) {
-		super();
-		this.orderid = orderid;
-		this.customer_name = customer_name;
-		this.final_price = final_price;
-		this.book_date = book_date;
-		this.images = images;
-		this.order_status = order_status;
-		this.userdetails = userdetails;
-		this.doctordetails1 = doctordetails1;
-		this.hospitaldetails = hospitaldetails;
+// 	public Orders(Integer orderid, String customer_name, Long final_price, Date book_date, String images,
+// 			String order_status, User_Details userdetails, Doctor_Details doctordetails1,
+// 			Hospital_details hospitaldetails, Doctor_Details hospitaldetails2) {
+// 		super();
+// 		this.orderid = orderid;
+// 		this.customer_name = customer_name;
+// 		this.final_price = final_price;
+// 		this.book_date = book_date;
+// 		this.images = images;
+// 		this.order_status = order_status;
+// 		this.userdetails = userdetails;
+// 		this.doctordetails1 = doctordetails1;
+// 		this.hospitaldetails = hospitaldetails;
 		
-	}
+// 	}
 
 	
 	
 	
-	Orders(){};
+// 	Orders(){};
 	
-	public User_Details getUserdetails() {
-		return userdetails;
-	}
+// 	public User_Details getUserdetails() {
+// 		return userdetails;
+// 	}
 
-	public void setUserdetails(User_Details userdetails) {
-		this.userdetails = userdetails;
-	}
+// 	public void setUserdetails(User_Details userdetails) {
+// 		this.userdetails = userdetails;
+// 	}
 
-	public Hospital_details getHospitaldetails() {
-		return hospitaldetails;
-	}
+// 	public Hospital_details getHospitaldetails() {
+// 		return hospitaldetails;
+// 	}
 
-	public void setCarsdetails(Hospital_details hsopitaldetails) {
-		this.hospitaldetails = hospitaldetails;
-	}
+// 	public void setCarsdetails(Hospital_details hsopitaldetails) {
+// 		this.hospitaldetails = hospitaldetails;
+// 	}
 
-	public Doctor_Details getDoctordetails() {
-		return getDoctordetails();
-	}
+// 	public Doctor_Details getDoctordetails() {
+// 		return getDoctordetails();
+// 	}
 
-	public void setBikedetails(Doctor_Details doctordetails) {
-		this.doctordetails1 = doctordetails;
-	}
+// 	public void setBikedetails(Doctor_Details doctordetails) {
+// 		this.doctordetails1 = doctordetails;
+// 	}
 
-	public void setPickup_day(java.sql.Date book_date) {
-		this.book_date = book_date;
-	}
+// 	public void setPickup_day(java.sql.Date book_date) {
+// 		this.book_date = book_date;
+// 	}
 
-	public void setBook_date(java.sql.Date book_date) {
-		this.book_date = book_date;
-	}
+// 	public void setBook_date(java.sql.Date book_date) {
+// 		this.book_date = book_date;
+// 	}
 
 //	@Override
 //	public String toString() {
@@ -103,22 +103,22 @@ public class Orders {
 //				+ ", carsdetails=" + carsdetails + ", bikedetails=" + bikedetails + "]";
 	
 
-	public Orders(Integer orderid, String customer_name, Long final_price, 
-			java.sql.Date book_date,  String images, String order_status,
-			User_Details userdetails, Doctor_Details doctordetails, Hospital_details Hospitaldetails) {
-		super();
-		this.orderid = orderid;
-		this.customer_name = customer_name;
-		this.final_price = final_price;
+// 	public Orders(Integer orderid, String customer_name, Long final_price, 
+// 			java.sql.Date book_date,  String images, String order_status,
+// 			User_Details userdetails, Doctor_Details doctordetails, Hospital_details Hospitaldetails) {
+// 		super();
+// 		this.orderid = orderid;
+// 		this.customer_name = customer_name;
+// 		this.final_price = final_price;
 		
-		this.book_date = book_date;
-		this.images = images;
-		this.order_status = order_status;
-		this.userdetails = userdetails;
-		this.doctordetails1 = doctordetails;
-		this.hospitaldetails = Hospitaldetails;
-	}
-}
+// 		this.book_date = book_date;
+// 		this.images = images;
+// 		this.order_status = order_status;
+// 		this.userdetails = userdetails;
+// 		this.doctordetails1 = doctordetails;
+// 		this.hospitaldetails = Hospitaldetails;
+// 	}
+// }
 
 //	public Integer getOrderid() {
 //		return orderid;
